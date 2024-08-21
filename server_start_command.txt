@@ -1,0 +1,6 @@
+./arma3server_x64 -name=profile1 -config=server.cfg -cfg=performance.cfg -limitFPS=700 -enableHT -loadMissionToMemory -autoInit -hugepages -noLogs -mod="gm"
+
+S.O.G. Prarie Fire: vn
+Global Mobilization: gm
+Western Sahara: ws
+CSLA Iron Curtain: csla

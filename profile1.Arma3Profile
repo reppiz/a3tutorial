@@ -1,0 +1,67 @@
+version=1;
+blood=1;
+singleVoice=0;
+gamma=1;
+brightness=1;
+soundEnableEAX=1;
+soundEnableHW=0;
+difficulty="Custom";
+class DifficultyPresets
+{
+	class CustomDifficulty
+	{
+		class Options
+		{
+			// Simulation
+			reducedDamage=0; // Decreases damage dealt to the player and members of his group. (0 = off, 1 = on)
+			
+			// Situational awareness
+			groupIndicators=1; // Shows indication icons on units in player's group. (0 = never, 1 = limited distance, 2 = always)
+			friendlyTags=0; // Friendly unit identification. Works only when the player aims at a unit. (0 = never, 1 = limited distance, 2 = always)
+			enemyTags=0; // Enemy unit identification. Works only when the player aims at a unit. (0 = never, 1 = limited distance, 2 = always)
+			detectedMines=1; // Shows icons indicating exact positions of mines which are 200 m or closer. (0 = never, 1 = limited distance, 2 = always)
+			commands=1; // Displays command icons like target markers, get in command and others. (0 = never, 1 = fade out, 2 = always)
+			waypoints=1; // Manages visibility of waypoint markers. (0 = never, 1 = fade out, 2 = always)
+			
+			// Personal awareness
+			weaponInfo=1; // Shows Weapon Info box contains round and magazine count, firing mode, etc.. (0 = never, 1 = fade out, 2 = always)
+			stanceIndicator=1; // Displays stance indication contains actual stance, weapon resting and deployment. (0 = never, 1 = fade out, 2 = always)
+			staminaBar=0; // Manages visibility of stamina indicator. Fades in when stamina changes. (0 = never, 1 = fade out, 2 = always)
+			weaponCrosshair=0; // Shows weapon crosshair both in 1st and 3rd person view. (0 = off, 1 = on)
+			visionAid=0; // Helps to detect units in visual range and identify friend from foe. (0 = off, 1 = on)
+			
+			// View
+			thirdPersonView=1; // Third person perspective (0 = off, 1 = on, 2 = vehicles only)
+			cameraShake=1; // Shakes camera if player is near explosion, passing vehicle or if player's vehicle is under G-load. (0 = off, 1 = on)
+			
+			// Multiplayer
+			scoreTable=1; // Displays table with kills, deaths and overall score in multiplayer. (0 = off, 1 = on)
+			deathMessages=1; // Shows in chat window who killed the player. (0 = off, 1 = on)
+			vonID=1; // Indicates who is speaking through VON communication. (0 = off, 1 = on)
+			
+			// Misc
+			mapContent=1; // Extended map content (0 = off, 1 = on)
+			autoReport=0; // Enables/disables automatic reporting of spotted enemies by players only (0 = off, 1 = on)
+			multipleSaves=1; // Allows player to create multiple saves in a mission. (0 = off, 1 = on)
+			tacticalPing=1; // Allows players to highlight a position via a Tactical Ping. (0 = off, 1 = in 3D scene, 2 = on map, 3 = both)
+		};
+		//aiLevelPreset is counted from 0 and can have following values: 0 (AI Level Low), 1 (AI Level Normal), 2 (AI Level High), 3 (AI Level Custom).
+        //When 3 (AI Level Custom) is chosen, values of skill and precision are stored to the class CustomAILevel.
+		aiLevelPreset=3;
+	};
+	class CustomAILevel
+	{
+		skillAI=1;
+		precisionAI=0.15000001;
+	};
+};
+activeKeys[]=
+{
+	"BIS_Evac.chernarus_done"
+};
+volumeCD=5;
+volumeFX=5;
+volumeSpeech=5;
+volumeVoN=5;
+volumeMapDucking=1;
+volumeUI=1;
